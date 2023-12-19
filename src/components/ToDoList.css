@@ -1,0 +1,19 @@
+.full-body {
+  width: 718px;
+  height: 445px;
+  top: 535px;
+  left: 156px;
+  gap: 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(237, 235, 235, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.text-area {
+  width: 569px;
+  height: 76px;
+  top: 50px;
+  left: 19px;
+  border-radius: 8px;
+  border: 1px solid rgba(237, 235, 235, 1);
+}

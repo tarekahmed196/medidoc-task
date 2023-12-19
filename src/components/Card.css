@@ -1,0 +1,12 @@
+.text-green {
+  color: rgba(3, 146, 43, 1);
+}
+.card-body1 {
+  width: 157.11px;
+  height: 153px;
+  border-radius: 6.58px;
+  gap: 5.76px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 0.82px solid rgba(237, 235, 235, 1);
+  box-shadow: 0px 3.290322780609131px 4.112903594970703px 0px rgba(0, 0, 0, 0.2);
+}

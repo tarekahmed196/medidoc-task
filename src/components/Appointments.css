@@ -1,0 +1,82 @@
+.full-appointments{
+    border-radius: 8px;
+    border: 1px solid rgba(237, 235, 235, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.text-gray {
+  color: rgba(56, 68, 73, 1);
+}
+.date-border {
+  border: 1px solid rgba(237, 235, 235, 1);
+}
+.layout {
+  width: 63px;
+  height: 101px;
+  top: 8px;
+  left: 8px;
+  border: 1px solid rgba(237, 235, 235, 1)
+}
+
+.layout2{
+    width: Hug (38px);
+height: Hug (66px);
+top: 22px;
+left: 21px;
+gap: 8px;
+
+}
+
+.slot-morning{
+    width: Hug (110px);
+height: Fixed (29px);
+padding: 8px;
+border-radius: 5px;
+gap: 8px;
+background-color: rgba(255, 255, 255, 1);
+border: 1px solid rgba(245, 245, 245, 1)
+
+
+}
+
+.slot{
+   color: rgba(138, 134, 134, 1);
+}
+.time{
+   color: rgba(138, 134, 134, 1);
+}
+.bg-dr{
+    background-color:rgba(255, 245, 245, 1)
+
+}
+
+.orange-circle {
+    background: rgba(255, 152, 152, 1);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+.yellow-circle {
+    background: rgba(255, 245, 152, 1);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+.green-circle {
+    background: rgba(152, 255, 193, 1);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+.blue-circle {
+    background: rgba(152, 199, 255, 1);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .vertical-border {
+    border-left: 1px solid #000;
+    height: 100px;
+    margin: 0 auto; /* This centers the vertical border within its container */
+  }
+  
