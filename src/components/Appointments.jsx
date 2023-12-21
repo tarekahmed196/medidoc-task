@@ -2,9 +2,9 @@
 import './Appointments.css'
 
 const Appointments = ({dataFromChild,isDesktop, isTablet, isMobile}) => {
-    console.log(isDesktop, isTablet, isMobile);
+    console.log('datafromchild',dataFromChild,isDesktop, isTablet, isMobile);
     return (
-        <div className={`${isDesktop? 'full-appointments': ''} ${isTablet? 'full-appointments2 mt-6 py-4': ''} ${isMobile? 'full-appointments3 mt-6 py-4': ''} ${dataFromChild? 'bg-white':'bg-[#2C2222]'}`}>
+        <div className={`${isDesktop? 'full-appointments': ''} ${isTablet? 'full-appointments2 mt-6 py-4': ''} ${isMobile? 'full-appointments3 mt-6 py-4': ''} ${dataFromChild ? 'bg-white':'bg-[#2C2222]'}`}>
             <h2 className={`p-4 ${dataFromChild? 'text-black':'text-white'}`}>Upcoming Appointments</h2>
             <div className='h-[498px] w-[420px] flex'>
                 <div className='flex flex-col space-y-1.5 h-[498px] mt-16 pl-4'>
@@ -27,7 +27,7 @@ const Appointments = ({dataFromChild,isDesktop, isTablet, isMobile}) => {
                                 <h2 className={`text-gray${isDesktop? 'text-xl':''} ${isTablet? 'text-sm':''} ${isMobile? 'text-sm':''}`}>Sep</h2>
                             </div>
                         </div>
-                        <div className={`bg-dr rounded-lg ${dataFromChild?'bg-white':' bg-[#413838]'} ${isDesktop ? 'layout4' : ''} ${isTablet ? 'layout3' : ''} ${isMobile ? 'layout3' : ''} `} >
+                        <div className={`bg-dr rounded-lg ${dataFromChild?'bg-[#FFF5F5]':' bg-[#413838]'} ${isDesktop ? 'layout4' : ''} ${isTablet ? 'layout3' : ''} ${isMobile ? 'layout3' : ''} `} >
                             <h1 className={`${isDesktop ? 'text-base mx-5': ''} ${isTablet? 'text-sm ml-5': ''} ${isMobile? 'text-sm ml-5': ''} ${dataFromChild?'text-[#413838]':'  text-white'}`}>Dr. Muhammad Abdul Hussein</h1>
                             <h2 className= {`text-sm font-normal mx-5 ${dataFromChild?'text-[#413838]':'  text-white'}`}>Cardiologist</h2>
                             <div className={`${isDesktop? 'flex p-[8px] gap-[8px]': ''} ${isTablet? 'flex p-[8px] gap-[8px] ml-3': ''} ${isMobile? 'flex p-[8px] gap-[8px] ml-3': ''}`}>
@@ -49,7 +49,7 @@ const Appointments = ({dataFromChild,isDesktop, isTablet, isMobile}) => {
                                 <h2 className={`text-gray${isDesktop? 'text-xl':''} ${isTablet? 'text-sm':''} ${isMobile? 'text-sm':''}`}>Sep</h2>
                             </div>
                         </div>
-                        <div className={`bg-dr rounded-lg ${dataFromChild?'bg-white':' bg-[#413838]'} ${isDesktop ? 'layout4' : ''} ${isTablet ? 'layout3' : ''} ${isMobile ? 'layout3' : ''} `} >
+                        <div className={`bg-dr rounded-lg ${dataFromChild?'bg-[#FFF5F5]':' bg-[#413838]'} ${isDesktop ? 'layout4' : ''} ${isTablet ? 'layout3' : ''} ${isMobile ? 'layout3' : ''} `} >
                             <h1 className={`${isDesktop ? 'text-base mx-5': ''} ${isTablet? 'text-sm ml-5': ''} ${isMobile? 'text-sm ml-5': ''} ${dataFromChild?'text-[#413838]':'  text-white'}`}>Dr. Muhammad Abdul Hussein</h1>
                             <h2 className= {`text-sm font-normal mx-5 ${dataFromChild?'text-[#413838]':'  text-white'}`}>Cardiologist</h2>
                             <div className={`${isDesktop? 'flex p-[8px] gap-[8px]': ''} ${isTablet? 'flex p-[8px] gap-[8px] ml-3': ''} ${isMobile? 'flex p-[8px] gap-[8px] ml-3': ''}`}>
@@ -71,7 +71,7 @@ const Appointments = ({dataFromChild,isDesktop, isTablet, isMobile}) => {
                                 <h2 className={`text-gray${isDesktop? 'text-xl':''} ${isTablet? 'text-sm':''} ${isMobile? 'text-sm':''}`}>Sep</h2>
                             </div>
                         </div>
-                        <div className={`bg-dr rounded-lg ${dataFromChild?'bg-white':' bg-[#413838]'} ${isDesktop ? 'layout4' : ''} ${isTablet ? 'layout3' : ''} ${isMobile ? 'layout3' : ''} `} >
+                        <div className={`bg-dr rounded-lg ${dataFromChild?'bg-[#FFF5F5]':' bg-[#413838]'} ${isDesktop ? 'layout4' : ''} ${isTablet ? 'layout3' : ''} ${isMobile ? 'layout3' : ''} `} >
                             <h1 className={`${isDesktop ? 'text-base mx-5': ''} ${isTablet? 'text-sm ml-5': ''} ${isMobile? 'text-sm ml-5': ''} ${dataFromChild?'text-[#413838]':'  text-white'}`}>Dr. Muhammad Abdul Hussein</h1>
                             <h2 className= {`text-sm font-normal mx-5 ${dataFromChild?'text-[#413838]':'  text-white'}`}>Cardiologist</h2>
                             <div className={`${isDesktop? 'flex p-[8px] gap-[8px]': ''} ${isTablet? 'flex p-[8px] gap-[8px] ml-3': ''} ${isMobile? 'flex p-[8px] gap-[8px] ml-3': ''}`}>
@@ -93,7 +93,7 @@ const Appointments = ({dataFromChild,isDesktop, isTablet, isMobile}) => {
                                 <h2 className={`text-gray${isDesktop? 'text-xl':''} ${isTablet? 'text-sm':''} ${isMobile? 'text-sm':''}`}>Sep</h2>
                             </div>
                         </div>
-                        <div className={`bg-dr rounded-lg ${dataFromChild?'bg-white':' bg-[#413838]'} ${isDesktop ? 'layout4' : ''} ${isTablet ? 'layout3' : ''} ${isMobile ? 'layout3' : ''} `} >
+                        <div className={`bg-dr rounded-lg ${dataFromChild?'bg-[#FFF5F5]':' bg-[#413838]'} ${isDesktop ? 'layout4' : ''} ${isTablet ? 'layout3' : ''} ${isMobile ? 'layout3' : ''} `} >
                             <h1 className={`${isDesktop ? 'text-base mx-5': ''} ${isTablet? 'text-sm ml-5': ''} ${isMobile? 'text-sm ml-5': ''} ${dataFromChild?'text-[#413838]':'  text-white'}`}>Dr. Muhammad Abdul Hussein</h1>
                             <h2 className= {`text-sm font-normal mx-5 ${dataFromChild?'text-[#413838]':'  text-white'}`}>Cardiologist</h2>
                             <div className={`${isDesktop? 'flex p-[8px] gap-[8px]': ''} ${isTablet? 'flex p-[8px] gap-[8px] ml-3': ''} ${isMobile? 'flex p-[8px] gap-[8px] ml-3': ''}`}>

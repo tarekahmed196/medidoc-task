@@ -23,7 +23,7 @@ import Plus from "../assets/plus.svg";
 import NewAppointment from "../assets/new_appointment.svg";
 
 
-const Sidebar = ({dataFromChild}) => {
+const Sidebar = ({dataFromChild, isTablet, isMobile, isDesktop}) => {
   console.log('data from child',dataFromChild);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -33,10 +33,10 @@ const Sidebar = ({dataFromChild}) => {
 
   return (
     <div
-      className={`h-[1051px] flex overflow-hidden `}
+      className={` flex overflow-hidden ${isDesktop? 'h-[1051px] ':''} ${isTablet? 'h-[1051px] fixed z-30 top-0 left-0':''} ${isMobile? 'fixed z-30 top-0 left-0':''}`}
     >
       {/* Sidebar Content */}
-      <div className={`flex flex-col items-center ${dataFromChild? 'bg-white': 'bg-black'}   ${isOpen ? 'w-[264px] relative z-10 ' : ""} `}>
+      <div className={`flex flex-col items-center ${dataFromChild? 'bg-white': 'bg-[#2E1619]'}   ${isOpen ? 'w-80 relative z-10 ' : ""} `}>
         {/* Hamburger Menu and Icons (Vertical) */}
         <div className="flex flex-col h-full items-center justify-between w-[96px]">
         
@@ -47,21 +47,24 @@ const Sidebar = ({dataFromChild}) => {
               onClick={toggleSidebar}
             >
               {
-                dataFromChild &&<img src={whiteHambergurMenu} className={`text-base ${dataFromChild? 'text-white ': 'text-black'}`}  /> || <img src={HambergurMenu} className={`text-base ${dataFromChild? 'text-white ': 'text-black'}`}  />
+                dataFromChild &&<img src={HambergurMenu}   />  
+              }
+              {
+                !dataFromChild &&<img src={whiteHambergurMenu}   />  
               }
               
             </button>
           <div className={`${isOpen ? "" : 'hidden'} flex gap-6 items-center`}>
                 <img src={Plus} alt="" />
                 
-                  <div className="text-2xl"><span className="text-black ">Medi</span><span className="text-pink">Doc</span></div>
+                  <div className="text-2xl"><span className={`${dataFromChild? 'text-black':'text-white'}`}>Medi</span><span className="text-pink">Doc</span></div>
 
               </div>
               <button style={{ transform: 'translate(50%)', overflow: 'visible',zIndex: 1}}
-              className="absolute top-0 right-0 flex items-center justify-start  mb-4 "
+              className={`fixed z-50 ${isDesktop? 'left-52':''} ${isTablet? 'left-64':''} ${isMobile? 'left-64':''}  top-0 flex items-center justify-start  mb-4`} 
               onClick={toggleSidebar}
             >
-              <img  src={MenuCloseIcon} className={`  ${dataFromChild? 'text-white ': 'text-black'} ${isOpen ? "" : "hidden"}`} />
+              <img  src={MenuCloseIcon} className={` ${isOpen ? "" : "hidden"}`} />
             </button>
 
           {/* Middle Icons */}
@@ -77,26 +80,44 @@ const Sidebar = ({dataFromChild}) => {
             </div>
             <div className={`flex  items-center  gap-5 w-full mb-2`}>
             {
-                dataFromChild &&<img src={whiteProfile} alt="" /> || <img src={Profile} alt="" />
+                dataFromChild &&<img src={Profile}   />  
               }
-              <span className={`text-base  ${dataFromChild? 'text-black ': 'text-white'} ${isOpen ? "mr-3" : "hidden"}`}>
+              {
+                !dataFromChild &&<img src={whiteProfile}   />  
+              }
+              <span className={`text-base   ${dataFromChild? 'text-black ': 'text-white'} ${isOpen ? "mr-3" : "hidden"}`}>
                 Patient Profile
               </span>
             </div>
             <div className={`flex items-center gap-5 w-full mb-2`}>
-              <img src={Appointments} alt="" />
+            {
+                dataFromChild &&<img src={Appointments}   />  
+              }
+              {
+                !dataFromChild &&<img src={whiteAppointments}   />  
+              }
               <span className={`text-base ${dataFromChild? 'text-black ': 'text-white'} ${isOpen ? "mr-3" : "hidden"}`}>
                 Appointments
               </span>
             </div>
             <div className={`flex items-center gap-5 w-full mb-2`}>
-              <img src={History} alt="" />
+            {
+                dataFromChild &&<img src={History}   />  
+              }
+              {
+                !dataFromChild &&<img src={whiteHistory}   />  
+              }
               <span className={`text-base ${dataFromChild? 'text-black ': 'text-white'} ${isOpen ? "mr-3" : "hidden"}`}>
               Medical History
               </span>
             </div>
             <div className={`flex items-center gap-5 w-full mb-2`}>
-              <img src={Settings} alt="" />
+            {
+                dataFromChild &&<img src={Settings}   />  
+              }
+              {
+                !dataFromChild &&<img src={whiteSettings}   />  
+              }
               <span className={`text-base ${dataFromChild? 'text-black ': 'text-white'} ${isOpen ? "mr-3" : "hidden"}`}>
                 Settings
               </span>

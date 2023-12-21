@@ -2,6 +2,7 @@ import Avator from "../assets/Avatar.svg";
 import Vector from "../assets/Vector.svg";
 import DayNightToggle from "react-day-and-night-toggle";
 import { useState } from "react";
+import hamburger from '../assets/white-icons/white_hamburger.svg'
 
 const NavBar = ({ onDataFromChild,dataFromChild,isDesktop, isTablet, isMobile }) => {
   const [isLightMode, setIsLightMode] = useState(true);
@@ -11,9 +12,13 @@ const NavBar = ({ onDataFromChild,dataFromChild,isDesktop, isTablet, isMobile })
   };
 
   return (
-    <div className={`navbar justify-between bg-transparent ${isMobile ? '-mb-16 ' : ''} ${dataFromChild? 'bg-white': 'bg-black'} `}>
+    <div className={`navbar justify-between  ${isMobile ? '-mb-16 ' : ''} ${dataFromChild? 'bg-white': ' bg-black'} `}>
   <div className={`${isDesktop? 'flex-1': ""} ${isTablet? 'flex-1': ""} ${isMobile? 'flex-3 ': ""}`}>
-    <span className={`${isDesktop ? 'text-black text-xl' : ''}${isTablet ? 'text-black text-xl' : ''} ${isMobile ? 'text-white text-xl' : ''}`}>Home</span>
+    {
+      isMobile &&<img src={hamburger} alt="" />
+    }
+    
+    <span className={`${dataFromChild? ' text-black': ' text-white'} ${isDesktop ? ' text-xl' : ''}${isTablet ? ' text-xl' : ''} ${isMobile ? ' text-xl' : ''}`}>Home</span>
   </div>
   <div className="flex-none ">
     <DayNightToggle

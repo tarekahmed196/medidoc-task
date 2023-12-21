@@ -45,8 +45,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div className={`flex bg-[#F9F9F9]`}>
-      <Sidebar dataFromChild={dataFromChild} />
+    <div className={`flex  ${dataFromChild? ' bg-[#F9F9F9]':'bg-black'}`}>
+      <Sidebar dataFromChild={dataFromChild} isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>
       <div className='w-full ml-16'>
         <NavBar dataFromChild={dataFromChild} onDataFromChild={handleDataFromChild} isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>
         {isDesktop && (
@@ -65,14 +65,14 @@ const Home = () => {
         {isTablet && (
           <>
             <Banner isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile} />
-            <Card isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>
+            <Card dataFromChild={dataFromChild} isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>
             <div className='lg:flex justify-between'>
-              <div className='flex items-center'>
-                <ToDoList isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile} />
-                <Appointments isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile} />
+              <div className='flex items-center justify-between'>
+                <ToDoList dataFromChild={dataFromChild} isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile} />
+                <Appointments dataFromChild={dataFromChild} isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile} />
               </div>
               <div>
-                <CovidUpdates isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>
+                <CovidUpdates dataFromChild={dataFromChild} isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>
               </div>
             </div>
           </>
@@ -81,14 +81,14 @@ const Home = () => {
         {isMobile && (
           <>
             <Banner isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile} />
-            <Card isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>
+            <Card dataFromChild={dataFromChild} isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>
             
               <div className='flex flex-col'>
-                <ToDoList isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile} />
-                <Appointments isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile} />
+                <ToDoList dataFromChild={dataFromChild} isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile} />
+                <Appointments dataFromChild={dataFromChild} isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile} />
               </div>
               <div>
-                <CovidUpdates isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>
+                <CovidUpdates dataFromChild={dataFromChild} isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>
               </div>
           </>
         )}
