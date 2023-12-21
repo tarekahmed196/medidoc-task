@@ -1,5 +1,4 @@
 .gray-text {
-  color: rgba(138, 134, 134, 1);
   font-weight: 400;
   font-size: 14px;
   line-height: 19.6px;
@@ -14,11 +13,36 @@
 .infection-number {
   width: 177px;
   height: 190px;
-  border-radius: 25px, 1px, 1px, 5px;
+  border-radius: 5px 1px 1px 5px;
   gap: 10px;
   background: linear-gradient(101.27deg, #ff7594 -6.58%, #ff7c65 102.46%);
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
 
+}
+.infection-number2 {
+  width: 377px;
+  height: 190px;
+  border-radius: 5px 1px 1px 5px;
+  gap: 10px;
+  background: linear-gradient(101.27deg, #ff7594 -6.58%, #ff7c65 102.46%);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+
+}
+.infection-number3 {
+  width: 177px;
+  height: 450px;
+  border-radius: 5px 1px 1px 5px;
+  gap: 10px;
+  background: linear-gradient(101.27deg, #ff7594 -6.58%, #ff7c65 102.46%);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.infection-number4 {
+  width: 177px;
+  height: 450px;
+  border-radius: 5px 1px 1px 5px;
+  gap: 10px;
+  background: linear-gradient(101.27deg, #ff7594 -6.58%, #ff7c65 102.46%);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .number-color{

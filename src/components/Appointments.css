@@ -1,7 +1,20 @@
-.full-appointments{
-    border-radius: 8px;
-    border: 1px solid rgba(237, 235, 235, 1);
-    background-color: rgba(255, 255, 255, 1);
+.full-appointments {
+  height: 570px;
+  width: 452px;
+  border-radius: 8px;
+  border: 1px solid rgba(237, 235, 235, 1);
+}
+.full-appointments2 {
+  height: 468px;
+  width: 355px;
+  border-radius: 8px;
+  border: 1px solid rgba(237, 235, 235, 1);
+}
+.full-appointments3 {
+  height: 468px;
+  width: 355px;
+  border-radius: 8px;
+  border: 1px solid rgba(237, 235, 235, 1);
 }
 
 .text-gray {
@@ -13,70 +26,84 @@
 .layout {
   width: 63px;
   height: 101px;
-  top: 8px;
-  left: 8px;
-  border: 1px solid rgba(237, 235, 235, 1)
+  left: 0.75rem;
+  border: 0.0625rem solid rgba(237, 235, 235, 1);
+  position: relative;
 }
 
-.layout2{
-    width: Hug (38px);
-height: Hug (66px);
-top: 22px;
-left: 21px;
-gap: 8px;
+.layout2 {
+  width: 3.029375rem; 
+  height: 4.856875rem; 
+  left: 0.385rem; 
+  border: 0.0484375rem solid rgba(237, 235, 235, 1); 
+  position: relative;
+}
+.layout3 {
+  width: 263.14px;      
+height: 77.71px;      
 
 }
-
-.slot-morning{
-    width: Hug (110px);
-height: Fixed (29px);
-padding: 8px;
-border-radius: 5px;
-gap: 8px;
-background-color: rgba(255, 255, 255, 1);
-border: 1px solid rgba(245, 245, 245, 1)
-
-
+.layout4 {
+  width: 342px; 
+  height: 101px;       
+left: 2.838rem;  
 }
 
-.slot{
-   color: rgba(138, 134, 134, 1);
-}
-.time{
-   color: rgba(138, 134, 134, 1);
-}
-.bg-dr{
-    background-color:rgba(255, 245, 245, 1)
 
+.slot-morning {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(245, 245, 245, 1);
+}
+.slot-morning2 {
+height: 22.31px;
+border-radius: 3.85px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(245, 245, 245, 1);
+}
+
+.slot {
+  color: rgba(138, 134, 134, 1);
+}
+.time {
+  color: rgba(138, 134, 134, 1);
+}
+.bg-dr {
+  border: 1px solid rgba(253, 218, 214, 1);
 }
 
 .orange-circle {
-    background: rgba(255, 152, 152, 1);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-  }
+  background: rgba(255, 152, 152, 1);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
 .yellow-circle {
-    background: rgba(255, 245, 152, 1);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-  }
+  background: rgba(255, 245, 152, 1);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
 .green-circle {
-    background: rgba(152, 255, 193, 1);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-  }
+  background: rgba(152, 255, 193, 1);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
 .blue-circle {
-    background: rgba(152, 199, 255, 1);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-  }
-  .vertical-border {
-    border-left: 1px solid #000;
-    height: 100px;
-    margin: 0 auto; /* This centers the vertical border within its container */
-  }
-  
+  background: rgba(152, 199, 255, 1);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.vertical-border {
+  border-left: 1px solid rgba(237, 235, 235, 1);
+  height: 100px;
+  margin: 0 auto; /* This centers the vertical border within its container */
+}
+.vertical-border2 {
+  border-left: 1px solid rgba(237, 235, 235, 1);
+  height: 70px;
+  margin: 0 auto; /* This centers the vertical border within its container */
+}
